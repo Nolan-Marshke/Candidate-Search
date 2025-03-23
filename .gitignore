@@ -19,9 +19,14 @@ dist-ssr
 .env.development.local
 .env.test.local
 .env.production.local
-*/.env
-environment/.env
 *.env
+environment/.env
+*/.env
+
+# Sensitive information protection
+*.pem
+*.key
+*.token
 
 # Editor directories and files
 .vscode/*
@@ -34,15 +39,7 @@ environment/.env
 *.sln
 *.sw?
 
-# Sensitive information
-*.pem
-*.key
-
-# Backup files
+# Temporary and backup files
 *.bak
-*.gzip
-*.zip
-
-# Temporary files
-*.tmp
 *.temp
+*.backup
