@@ -14,7 +14,8 @@
     "noEmit": true,
     "jsx": "react-jsx",
 
-    /* More explicit type checking */
+    /* Type configuration */
+    "types": ["react", "react-dom"],  // Explicitly include React types
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
@@ -22,11 +23,7 @@
 
     /* Additional type checking */
     "allowSyntheticDefaultImports": true,
-    "forceConsistentCasingInFileNames": true,
-
-    /* New settings to help resolve JSX issues */
-    "jsxImportSource": "react",
-    "types": ["react", "react-dom"]
+    "forceConsistentCasingInFileNames": true
   },
   "include": ["src"],
   "references": [{ "path": "./tsconfig.node.json" }]
