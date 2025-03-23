@@ -38,7 +38,7 @@ A React TypeScript application that allows users to browse and save potential ca
   ```
 
 ## Deployment
-Deployed on Render: [Your Render URL]
+Deployed on Render: [https://candidate-search-mkzy.onrender.com/]
 
 ## License
 MIT License
