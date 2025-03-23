@@ -2,9 +2,10 @@ import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 
 export default defineConfig({
-  envDir: './environment', // Ensure this points to your environment directory
   plugins: [react()],
-  build: {
-    outDir: 'dist' // Ensure this matches Render's expectation
+  preview: {
+    port: 5173,
+    strictPort: false,  // Allow falling back to another port if needed
+    host: true          // Expose to all network interfaces
   }
 });
